@@ -1,0 +1,188 @@
+body {
+    font-family: BlinkMacSystemFont,-apple-system,Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+    
+}
+
+
+.dark {
+    background-color: #111111;
+    
+}
+
+.nav-Container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #b3b9c5;
+}
+
+.nav .nav-container {
+    padding: 0 1.5rem;
+    height: 55px;
+    max-width: 850px;
+    margin: auto;
+    justify-content: space-between;
+    transition: height .3s ease;
+}
+
+@media (min-width: 620px)
+{
+    .nav .nav-container {
+        height: 160px;
+        padding: 0 2rem;
+    }
+.nav .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 100%;
+    align-items: center;
+    margin: 0;
+}
+.nav .links a {
+    font-size: 1.2rem;
+    margin: 0 .5rem;
+    padding: 1rem;
+    border-bottom: 2px solid transparent;
+    border-radius: 4px;
+}
+}
+
+
+.dark .nav .links a {
+    color: #798499;
+    transition: 0.15s ease-in;
+    text-decoration: none;
+
+}
+
+a:hover {
+    background-color: rgb(3, 3, 3);
+    color: white !important;
+}
+
+.brand {
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+
+.brand:hover {
+    font-size: 20px;
+    color: #d3d6db;
+    cursor: pointer;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.main {
+    display: block;
+    flex: 2 1;
+    margin-right: 3rem;
+}
+
+.light {
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+    color: #b3b9c5;
+}
+
+main {
+    margin-top: 60px;
+    padding: 10px 0 0;
+    min-height: calc(100vh - 219px);
+    color: #b3b9c5;
+}
+
+
+.main h1 {
+    font-size: 3rem;
+}
+
+.lightMode {
+    color: black !important;
+}
+
+
+.main p {
+    font-size: 20px;
+    width: 900px;
+    margin: 0 auto;
+}
+
+.switch {
+    color: white;
+}
+
+.switch:hover {
+    color: white !important;
+    cursor: pointer;
+}
+
+.projects {
+    flex-direction: column; width: 30%; margin: 0 auto;
+}
+.projects {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+
+.project {
+    background-color: rgb(68, 2, 68);
+    padding: 2.5rem;
+    vertical-align: middle;
+    border-radius: 2rem;
+    color: white;
+    text-align: center;
+    margin-top: 25px;
+    transition: ease-in 0.3s;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 2px 2px 2px 2px black;
+
+
+}
+
+
+.project p {
+    max-width: 550px;
+}
+
+@media (min-width:320px) {
+    .main p {
+        width: auto;
+    }
+    .content {
+        padding-left: 25px;
+    }
+    .projects {
+        width: 60%;
+     }
+ }
+
+ @media (min-width:1080px) {
+    .main p {
+        width: 900px;
+    }
+    .content {
+        padding-left: auto;
+    }
+    .projects {
+       width: 30%;
+    }
+ }
