@@ -163,6 +163,11 @@ main {
     max-width: 550px;
 }
 
+.projects {
+    margin: 0 auto;
+    width: 60%;
+ }
+
 @media (min-width:320px) {
     .main p {
         width: auto;
@@ -170,10 +175,6 @@ main {
     .content {
         padding-left: 25px;
     }
-    .projects {
-        margin: 0 auto;
-        width: 60%;
-     }
  }
 
  @media (min-width:1080px) {
@@ -186,6 +187,5 @@ main {
     }
     .projects {
         margin: 0 auto;
-       width: 30%;
     }
  }
